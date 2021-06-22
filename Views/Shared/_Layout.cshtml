@@ -15,12 +15,18 @@
             <a asp-area="" asp-controller="Home" asp-action="Index">  <img src="~/_assets/logo.svg" alt="Logo E-Players">  </a>
             <nav>
                 <ul>
-                    <li> <a class="link_nav" href="#sidebar_proximos_jogos">horários</a> </li>
-                    <li> <a class="link_nav" href="#banner2">campeonato</a> </li>
-                    <li> <a class="link_nav" href="#">resultado</a> </li>
-                    <li> <a class="link_nav" href="#noticias">noticia</a> </li>
-                    <li> <a class="link_times" href="./cadastro_times.html">times</a> </li>
-                    <li> <a class="link_jogadores" href="./cadastro_jogador.html">jogadores</a> </li>
+                    <li> <a class="link_nav" href="/#sidebar_proximos_jogos">horários</a> </li>
+                    <li> <a class="link_nav" href="/#banner2">campeonato</a> </li>
+                    <li> <a class="link_nav" href="/#noticias">noticia</a> </li>
+                    <li> <a class="link_times" asp-area="" asp-controller="Equipe" asp-action="Index">times</a> </li>
+                    @if (ViewBag.UserName != null)
+                    {
+                        <li class="user_saudacao">Olá @ViewBag.UserName</li>
+                        <li> <a class="link_jogadores" asp-area="" asp-controller="Login" asp-action="Logout">Logout</a> </li>
+                    }else{
+
+                    <li> <a class="link_jogadores" asp-area="" asp-controller="Login" asp-action="Index">Login</a> </li>
+                    }
                 </ul>
             </nav>
         </div>
@@ -37,10 +43,10 @@
             <div class="style_list">
                 <h3>Páginas</h3>
                 <ul>
-                    <li> <a href="#">Inicio</a> </li>
-                    <li> <a href="#">Campeonatos</a> </li>
+                    <li> <a asp-area="" asp-controller="Home" asp-action="Index">Inicio</a> </li>
+                    <li> <a href="/#banner2">Campeonatos</a> </li>
                     <li> <a href="#">Resultados</a> </li>
-                    <li> <a href="#">Noticia</a> </li>
+                    <li> <a href="/#noticias">Noticia</a> </li>
                     <li> <a href="#">Login/Cadastro</a> </li>
                 </ul>
             </div>

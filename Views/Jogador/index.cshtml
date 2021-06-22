@@ -1,0 +1,55 @@
+@model Jogador
+@{
+    ViewData["Title"] = "Jogadores";
+}
+
+<section class="cadastro_jogador">
+    <div class="castelo">
+        <div class="conteudo_cadastro_jogador">
+            <div class="titulo_cadastro_jogador">
+                <h1>Cadastro de Jogador</h1>
+                <img src="~/_assets/decoracao_cadastro.svg" alt="Decoração cadastro do jogador">
+            </div>
+
+            <form method="POST" action='@Url.Action("Cadastrar")'>
+                <input class="input_cadastro_usuario" name="Nome" type="text" placeholder="Nome">
+                <input class="input_cadastro_usuario" name="Email" type="e-mail" placeholder="E-mail">
+                <input class="input_cadastro_usuario" name="Senha" type="password" placeholder="Senha">
+                <input class="input_cadastro_usuario" name="IdEquipe" type="text" placeholder="IdEquipe">
+                <input class="input_cadastro_usuario" name="IdJogador" type="text" placeholder="IdJogador">
+                <button class="btn_cadastrar_usuario" type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<section class="lista_jogadores">
+    <div class="container_lista_jogadores">
+        <h2>Lista de Jogadores</h2>
+
+        <table>
+            <thead>
+                <tr class="titulo_tabela">
+                    <th>Id</th>
+                    <th>Nome do Jogador</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var jogador in ViewBag.jogadores)
+                {
+                    <tr>
+                        <td>@jogador.IdJogador</td>
+                        <td>@jogador.Nome</td>
+                        <td>@jogador.Email</td>
+                    </tr>
+                }
+
+            </tbody>
+
+
+        </table>
+    </div>
+</section>

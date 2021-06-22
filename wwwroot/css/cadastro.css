@@ -9,7 +9,11 @@
 
 }
 
-
+.erro{
+    font-family: 'Titillium Web', sans-serif;
+    color: #ff2424;
+    text-align: center;
+}
 
 /* HEADER */
 
@@ -104,6 +108,16 @@
     border-radius: 8px;
     border: none;
     height: 1.7em;
+    font-weight: bold;
+}
+
+.input_login_usuario{
+    font-family: 'Titillium Web', sans-serif;
+    color: #04091A;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    height: 2.2em;
     font-weight: bold;
 }
 

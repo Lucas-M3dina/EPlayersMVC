@@ -39,3 +39,5 @@ C:\Users\User\Desktop\GIT\MVC_Eplayers\obj\Debug\net5.0\ref\MVC_Eplayers.dll
 C:\Users\User\Desktop\GIT\MVC_Eplayers\obj\Debug\net5.0\MVC_Eplayers.pdb
 C:\Users\User\Desktop\GIT\MVC_Eplayers\obj\Debug\net5.0\MVC_Eplayers.genruntimeconfig.cache
 C:\Users\User\Desktop\GIT\MVC_Eplayers\obj\Debug\net5.0\MVC_Eplayers.csproj.CopyComplete
+C:\Users\User\Desktop\GIT\MVC_Eplayers\obj\Debug\net5.0\Razor\Views\Jogador\index.cshtml.g.cs
+C:\Users\User\Desktop\GIT\MVC_Eplayers\obj\Debug\net5.0\Razor\Views\Login\index.cshtml.g.cs
