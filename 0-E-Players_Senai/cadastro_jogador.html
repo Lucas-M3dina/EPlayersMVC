@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="_css/cadastro.css">
+        <title>Cadastro</title>
+    </head>
+    <body>
+        <header class="header_principal">
+            <div class="container_header">
+                <img class="flecha_header" src="_assets/FLECHA.svg" alt="Decoração Header">
+                <a href="index.html"> <img class="logo_header" src="_assets/logo.svg" alt="Logo E-Players" > </a>
+                <img class="flecha_header" src="_assets/FLECHA2.svg" alt="Decoração Header">
+            </div>
+        </header>
+
+        <main>
+            <section class="cadastro_jogador">
+                <div class="castelo">
+                    <div class="conteudo_cadastro_jogador">
+                        <div class="titulo_cadastro_jogador">
+                            <h1>Cadastro de Jogador</h1>
+                            <img src="_assets/decoracao_cadastro.svg" alt="Decoração cadastro do jogador">
+                        </div>
+
+                        <form action="#">
+                            <input class="input_cadastro_usuario" type="text" placeholder="Nome">
+                            <input class="input_cadastro_usuario" type="email" placeholder="E-mail">
+                            <input class="input_cadastro_usuario" type="password" placeholder="Senha">
+                            <select class="select_cadastro_usuario">
+                                <option selected="selected" hidden>Equipes</option>
+                            </select>
+                            <input class="btn_cadastrar_usuario" type="submit" value="Cadastrar">
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="lista_jogadores">
+                <div class="container_lista_jogadores">
+                    <h2>Lista de Jogadores</h2>
+
+                    <table>
+                        <tr class="titulo_tabela">
+                            <th>Nome do Jogador</th>
+                            <th>Equipe</th>
+                        </tr>
+
+                        <tr>
+                            <td>Thiago</td>
+                            <td>SENAI Cytechs</td>
+                        </tr>
+
+                        <tr>
+                            <td>Odirlei</td>
+                            <td>SENAI Cytechs</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <div class="flex_footer">
+                <div class="style_list">
+                    <h2>Páginas</h2>
+                    <ul>
+                        <li> <a href="#">Inicio</a> </li>
+                        <li> <a href="#">Campeonatos</a> </li>
+                        <li> <a href="#">Resultados</a> </li>
+                        <li> <a href="#">Noticia</a> </li>
+                        <li> <a href="#">Login/Cadastro</a> </li>
+                    </ul>
+                </div>
+
+                <div class="mid_footer">
+                    <a href="#"> <img class="logo_footer" src="_assets/logo.svg" alt="E-Players Logo"> </a>
+                    <p>Faça parte do nosso clan, receba notícias e promoções!</p>
+                    <form action="#">
+                        <input class="input_email" type="email" placeholder="E-Mail">
+                        <input class="input_submit" type="submit" value="Cadastrar">
+                    </form>
+                </div>
+
+                <div class="redes_sociais_creditos_footer">
+                    <p>Siga-nos em</p>
+                    <div class="logos_redes">
+                        <a href="#"> <img src="_assets/facebook_logo.png" alt="Logo do Facebook"> </a>
+                        <a href="#"> <img src="_assets/youtube_logo.png" alt="Logo do Youtube"> </a>
+                        <a href="#"> <img src="_assets/instagram_logo.png" alt="Logo do instagram"> </a>
+                        <a href="#"> <img src="_assets/twitter_logo.png" alt="Logo do Twitter"> </a>
+                    </div>
+                    <span>E-Players todos os direitos reservados</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

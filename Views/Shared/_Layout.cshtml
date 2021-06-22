@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MVC_Eplayers</title>
+    
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/cadastro.css" />
+    <link rel="stylesheet" href="~/css/cadastro_times.css" />
+</head>
+<body>
+    <header>
+        <div class="container_header">
+            <a asp-area="" asp-controller="Home" asp-action="Index">  <img src="~/_assets/logo.svg" alt="Logo E-Players">  </a>
+            <nav>
+                <ul>
+                    <li> <a class="link_nav" href="#sidebar_proximos_jogos">horários</a> </li>
+                    <li> <a class="link_nav" href="#banner2">campeonato</a> </li>
+                    <li> <a class="link_nav" href="#">resultado</a> </li>
+                    <li> <a class="link_nav" href="#noticias">noticia</a> </li>
+                    <li> <a class="link_times" href="./cadastro_times.html">times</a> </li>
+                    <li> <a class="link_jogadores" href="./cadastro_jogador.html">jogadores</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="flex_footer">
+            <div class="style_list">
+                <h3>Páginas</h3>
+                <ul>
+                    <li> <a href="#">Inicio</a> </li>
+                    <li> <a href="#">Campeonatos</a> </li>
+                    <li> <a href="#">Resultados</a> </li>
+                    <li> <a href="#">Noticia</a> </li>
+                    <li> <a href="#">Login/Cadastro</a> </li>
+                </ul>
+            </div>
+
+            <div class="mid_footer">
+                <a asp-area="" asp-controller="Home" asp-action="Index"> <img class="logo_footer" src="~/_assets/logo.svg" alt="E-Players Logo"> </a>
+                <p>Faça parte do nosso clan, receba notícias e promoções!</p>
+                <form action="#">
+                    <input class="input_email" type="email" placeholder="E-Mail">
+                    <input class="input_submit" type="submit" value="Cadastrar">
+                </form>
+            </div>
+
+            <div class="redes_sociais_creditos_footer">
+                <p>Siga-nos em</p>
+                <div class="logos_redes">
+                    <a href="#"> <img src="~/_assets/facebook_logo.png" alt="Logo do Facebook"> </a>
+                    <a href="#"> <img src="~/_assets/youtube_logo.png" alt="Logo do Youtube"> </a>
+                    <a href="#"> <img src="~/_assets/instagram_logo.png" alt="Logo do instagram"> </a>
+                    <a href="#"> <img src="~/_assets/twitter_logo.png" alt="Logo do Twitter"> </a>
+                </div>
+                <span>E-Players todos os direitos reservados</span>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
