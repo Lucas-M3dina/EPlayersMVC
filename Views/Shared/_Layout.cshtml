@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MVC_Eplayers</title>
+    <script src="https://kit.fontawesome.com/2faae0d38b.js" crossorigin="anonymous"></script>
+    <script src="~/js/site.js"></script>
     
     <link rel="stylesheet" href="~/css/style.css" />
     <link rel="stylesheet" href="~/css/cadastro.css" />
@@ -21,8 +23,8 @@
                     <li> <a class="link_times" asp-area="" asp-controller="Equipe" asp-action="Index">times</a> </li>
                     @if (ViewBag.UserName != null)
                     {
-                        <li class="user_saudacao">Olá @ViewBag.UserName</li>
-                        <li> <a class="link_jogadores" asp-area="" asp-controller="Login" asp-action="Logout">Logout</a> </li>
+                        <li class="user_saudacao">  <i class="far fa-user"></i>  <span>Olá @ViewBag.UserName !</span>  </li>
+                        <li> <a onclick="MostrarRecado()" class="link_jogadores" >Logout</a> </li>
                     }else{
 
                     <li> <a class="link_jogadores" asp-area="" asp-controller="Login" asp-action="Index">Login</a> </li>
@@ -34,6 +36,7 @@
 
     <div class="container">
         <main role="main" class="pb-3">
+            
             @RenderBody()
         </main>
     </div>

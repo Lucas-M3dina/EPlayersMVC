@@ -3,6 +3,8 @@
 
 // Write your JavaScript code.
 
+// FORMS ESTILIZANDO
+
 chamandoAnalise = document.getElementById("input_file");
 
 chamandoAnalise.addEventListener("change", analiseForm);
@@ -19,3 +21,26 @@ function analiseForm(){
         estilo.style.backgroundColor = "#258c00";
     }
 }
+
+// MENSAGEM DE LOGOUT
+
+
+console.log("testeeeeeeeeeeeeeeeeeeeeee");
+
+function MostrarRecado() {
+    
+    var mostrarRecado = document.getElementById("recado_github");
+    mostrarRecado.style.display = "unset";
+}
+
+function RecadoSim() {
+    var sim = document.getElementById("resposta_github");
+    sim.textContent = "Que bom meu amô, casamo!! <3";
+}
+
+function RecadoNao() {
+    var nao = document.getElementById("resposta_github");
+    nao.textContent = "Ta chapando krai, ideia torta da poha";
+}
+
+

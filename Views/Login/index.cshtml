@@ -14,7 +14,7 @@
             <form method="POST" action='@Url.Action("Logar")'>
                 <span class="erro">@TempData.Peek("Mensagem")</span>
 
-                <input class="input_login_usuario" name="Email" type="e-mail" placeholder="E-mail" required>
+                <input class="input_login_usuario" name="Email" type="email" placeholder="E-mail" required>
                 <input class="input_login_usuario" name="Senha" type="password" placeholder="Senha" required>
                 <button class="btn_cadastrar_usuario" type="submit">Cadastrar</button>
             </form>

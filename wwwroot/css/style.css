@@ -66,6 +66,7 @@
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
         color: #fff;
+        cursor: pointer;
     }
 
     header .link_jogadores:hover {
@@ -537,4 +538,52 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+
+/* RECADO GITHUB */
+
+#recado_github{
+    display: none;
+    background-color: rgb(62 61 61);
+    position: fixed;
+    top: 21%;
+    left: 26%;
+    width: 50%;
+    height: 64%;
+    border-radius: 10px;
+    z-index: 99;
+}
+
+.container_github{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_github div label{
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+.texto_github{
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    width: 80%;
+    padding: 6% 0;
+    margin: 0 auto;
+    font-size: 23px;
+}
+
+.pergunta_github{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 23px;
+    color: #ff3535;
+    font-weight: 600;
+}
+
+#resposta_github{
+    font-size: 22px;
+    color: #2f64f9;
+    font-family: 'Titillium Web', sans-serif;
 }
