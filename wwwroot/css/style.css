@@ -550,7 +550,7 @@ footer{
     top: 21%;
     left: 26%;
     width: 50%;
-    height: 64%;
+    height: auto;
     border-radius: 10px;
     z-index: 99;
 }
@@ -586,4 +586,9 @@ footer{
     font-size: 22px;
     color: #2f64f9;
     font-family: 'Titillium Web', sans-serif;
+    padding: 0 2em;
+}
+
+.logout{
+    margin: 2em;
 }

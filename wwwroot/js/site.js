@@ -40,7 +40,7 @@ function RecadoSim() {
 
 function RecadoNao() {
     var nao = document.getElementById("resposta_github");
-    nao.textContent = "Ta chapando krai, ideia torta da poha";
+    nao.textContent = "Ta chapando krai, ideia torta da poha, segue la Lucas-M3dina";
 }
 
 
